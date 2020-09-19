@@ -94,6 +94,12 @@ a {
 button:focus {
     outline: 0 !important;
 }
+.white-bg {
+    background-color: $white;
+}
+.dark-bg {
+    background-color: #2D3135;
+}
 /* common styles end */
 
 /* main content styles start */
@@ -102,7 +108,6 @@ section.main-content {
     /* statistics section styles start */
     div.statistics {
         height: 250px;
-        background-color: $white;
         border-radius: 5px;
         padding: 40px 60px !important;
         h1 {
@@ -125,7 +130,6 @@ section.main-content {
     div.agreements {
         .agreements-table {
             table {
-                background-color: $white;
                 border-collapse: separate;
                 border-radius: 5px;
                 tr {
@@ -170,7 +174,6 @@ section.main-content {
                 font-size: 15px;
                 font-weight: 500;
                 .filter-content {
-                    background-color: $white;
                     margin: 20px 0 !important;
                     border-radius: 5px;
                     h3 {
@@ -210,3 +213,5 @@ section.main-content {
     /* create appeal styles end */
 }
 /* main content styles end */
+
+@import "dark-mode";

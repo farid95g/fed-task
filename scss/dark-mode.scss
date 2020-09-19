@@ -1,0 +1,22 @@
+body.dark-mode {
+    background-color: #212529;
+    color: $white !important;
+    td, th {
+        color: $white !important;
+    }
+    a.username {
+        color: $white;
+    }
+    .appeal-dropdown {
+        a {
+            color: $white;
+        }
+    }
+    input {
+        background-color: #34383D;
+        color: $white;
+    }
+    label {
+        color: rgba(255, 255, 255, .5);
+    }
+}

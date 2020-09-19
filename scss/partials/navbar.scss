@@ -2,11 +2,11 @@ section.main-content {
     /* navbar styles start */
     nav {
         height: $header-height;
-        background-color: $white;
         /* search box styles start */
         .search-box {
             input {
                 border: none;
+                background: transparent;
                 &::placeholder {
                     font-size: $smaller-font;
                     color: #C0C5C7;
@@ -24,7 +24,6 @@ section.main-content {
                 width: 146px;
             }
             .appeal-dropdown {
-                background-color: $white;
                 transition: opacity .5s;
                 border-radius: 5px;
                 a {

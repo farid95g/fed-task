@@ -37,7 +37,6 @@ section.main-content {
   /* navbar styles end */ }
   section.main-content nav {
     height: 80px;
-    background-color: #fff;
     /* search box styles start */
     /* search box styles end */
     /* new appeal button and dropdown styles start */
@@ -45,7 +44,8 @@ section.main-content {
     /* account information styles start */
     /* account information styles end */ }
     section.main-content nav .search-box input {
-      border: none; }
+      border: none;
+      background: transparent; }
       section.main-content nav .search-box input::placeholder {
         font-size: 14px;
         color: #C0C5C7; }
@@ -56,7 +56,6 @@ section.main-content {
       border: none;
       width: 146px; }
     section.main-content nav .new-appeal .appeal-dropdown {
-      background-color: #fff;
       transition: opacity .5s;
       border-radius: 5px; }
       section.main-content nav .new-appeal .appeal-dropdown a {
@@ -168,6 +167,12 @@ a {
 button:focus {
   outline: 0 !important; }
 
+.white-bg {
+  background-color: #fff; }
+
+.dark-bg {
+  background-color: #2D3135; }
+
 /* common styles end */
 /* main content styles start */
 section.main-content {
@@ -180,7 +185,6 @@ section.main-content {
   /* create appeal styles end */ }
   section.main-content div.statistics {
     height: 250px;
-    background-color: #fff;
     border-radius: 5px;
     padding: 40px 60px !important; }
     section.main-content div.statistics h1 {
@@ -193,7 +197,6 @@ section.main-content {
     section.main-content div.statistics strong {
       font-size: 24px; }
   section.main-content div.agreements .agreements-table table {
-    background-color: #fff;
     border-collapse: separate;
     border-radius: 5px; }
     section.main-content div.agreements .agreements-table table tr {
@@ -222,7 +225,6 @@ section.main-content {
     font-size: 15px;
     font-weight: 500; }
     section.main-content div.create-appeal div.filter form .filter-content {
-      background-color: #fff;
       margin: 20px 0 !important;
       border-radius: 5px; }
       section.main-content div.create-appeal div.filter form .filter-content h3 {
@@ -250,5 +252,19 @@ section.main-content {
         color: #fff; }
 
 /* main content styles end */
+body.dark-mode {
+  background-color: #212529;
+  color: #fff !important; }
+  body.dark-mode td, body.dark-mode th {
+    color: #fff !important; }
+  body.dark-mode a.username {
+    color: #fff; }
+  body.dark-mode .appeal-dropdown a {
+    color: #fff; }
+  body.dark-mode input {
+    background-color: #34383D;
+    color: #fff; }
+  body.dark-mode label {
+    color: rgba(255, 255, 255, 0.5); }
 
 /*# sourceMappingURL=styles.css.map */
