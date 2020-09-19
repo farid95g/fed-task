@@ -1,3 +1,4 @@
+// adding active-link class to the active link in the sidebar
 document.querySelectorAll("nav.aside-menu a").forEach(link => {
     link.onclick = (e) => {
         document.querySelector("nav.aside-menu .active-link").classList.remove("active-link");
@@ -5,6 +6,7 @@ document.querySelectorAll("nav.aside-menu a").forEach(link => {
     }
 })
 
+// function for toggling the dark and light modes
 document.querySelectorAll("aside footer .theme-toggler a").forEach(toggler => {
     toggler.addEventListener("click", (e) => {
         e.preventDefault();
@@ -28,15 +30,18 @@ document.querySelectorAll("aside footer .theme-toggler a").forEach(toggler => {
     })
 })
 
+// function for changing the src attribute of the image
 const changeImage = (arr, src) => {
     arr.forEach(image => {
-        if (window.location.href.toString().split('/').indexOf("index.html") !== -1) {
+        if (window.location.href.toString().split('/').indexOf("html") === -1) {
             image.src = src;
         } else {
             image.src = "../" + src;
         }        
     })
 }
+
+// function for changing the background of the specified elements
 const changeBackground = (arr, oldColor, newColor) => {
     arr.forEach(elm => {
         elm.classList.remove(oldColor);
@@ -44,6 +49,7 @@ const changeBackground = (arr, oldColor, newColor) => {
     })
 }
 
+// function for toggling the hidden class for the dropdown menu
 document.getElementById("show-appeal-dropdown").addEventListener("click", () => {
     document.querySelector(".appeal-dropdown").classList.toggle("hidden");
 })

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="../scss/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <!-- sidebar starts -->
+        <aside class="sidebar">
+            <!-- logo starts -->
+            <div class="logo d-flex align-items-center">
+                <div class="w-100 d-flex justify-content-center">
+                    <a href="#" class="mr-1">
+                        <img src="../assets/icons/logo.svg" alt="company logo" />
+                    </a>
+                    <a href="#" class="company-name d-flex">
+                        <img src="../assets/icons/company-name-1.svg" alt="atesgah" />
+                        <img src="../assets/icons/company-name-2.svg" alt="sigorta" />
+                    </a>
+                </div>
+            </div>
+            <!-- logo ends -->
+
+            <!-- navigation menu links start -->
+            <nav class="aside-menu">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="../index.html" class="white d-flex align-items-center py-3 pl-4 position-relative active-link">
+                            <img class="mr-2" src="../assets/icons/main.svg" alt="main page icon" />Əsas
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="white d-flex align-items-center py-3 pl-4 position-relative">
+                            <img class="mr-2" src="../assets/icons/agreements.svg" alt="agreements icon" />Müqavilələr
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="white d-flex align-items-center py-3 pl-4 position-relative">
+                            <img class="mr-2" src="../assets/icons/accounts.svg" alt="accounts icon" />Hesablar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="white d-flex align-items-center py-3 pl-4 position-relative">
+                            <img class="mr-2" src="../assets/icons/insurance-event.svg" alt="insurance event icon" />Sığorta hadisəsi
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- navigation menu links end -->
+
+            <!-- sidebar footer starts -->
+            <footer class="position-absolute w-100 text-center">
+                <div class="theme-toggler mx-auto d-flex justify-content-between align-items-center">
+                    <a class="d-flex align-items-center justify-content-center light-mode active-toggler" href="#">
+                        <img src="../assets/icons/light-mode.svg" alt="light mode icon" />
+                    </a>
+                    <a class="d-flex align-items-center justify-content-center dark-mode" href="#">
+                        <img src="../assets/icons/dark-mode.svg" alt="dark mode icon" />
+                    </a>
+                </div>
+                <div class="contact py-4">
+                    <p class="py-1">
+                        <a class="blue" href="mailto:info@ateshgah.az">info@ateshgah.az</a>
+                    </p>
+                    <p class="py-1">
+                        <a class="gray" href="tel:+994-12-576-66-88">+994-12-576-66-88</a>
+                    </p>
+                    <p class="gray py-1">&copy; 2020. Ateshgah</p>
+                </div>
+            </footer>
+            <!-- sidebar footer ends -->
+        </aside>
+        <!-- sidebar ends -->
+
+        <!-- main content starts -->
+        <section class="main-content ml-auto">
+            <!-- navbar starts -->
+            <nav class="shadowed white-bg">
+                <div class="px-5 d-flex align-items-center justify-content-between h-100">
+                    <div class="search-box">
+                        <div>
+                            <img class="mr-2" src="../assets/icons/search.svg" alt="search icon" />
+                            <input type="search" placeholder="Axtarış..." />
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="new-appeal mr-4 position-relative">
+                            <button class="dark py-2" id="show-appeal-dropdown">Müraciət yarat &#43;</button>
+                            <div class="position-absolute appeal-dropdown w-100 py-2 mt-2 hidden shadowed-dropdown white-bg">
+                                <ul class="list-unstyled pl-3">
+                                    <li class="py-2">
+                                        <a class="dark" href="new-appeal.html">NVSMMIS</a>
+                                    </li>
+                                    <li class="py-2">
+                                        <a class="dark" href="#">Krasko sığorta</a>
+                                    </li>
+                                    <li class="py-2">
+                                        <a class="dark" href="#">Səfər sığortası</a>
+                                    </li>
+                                    <li class="py-2">
+                                        <a class="dark" href="#">Əmlak sığortası</a>
+                                    </li>
+                                    <li class="py-2">
+                                        <a class="dark" href="#">Tibbi sığorta</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- account options starts -->
+                        <div class="d-flex align-items-center account-info">
+                            <div>
+                                <img src="../assets/images/profile-image.svg" alt="user's profile image" />
+                            </div>
+                            <a href="#" class="dark mx-2 username">Vahid Quluzadə</a>
+                            <img class="log-out" src="../assets/icons/log-out.svg" alt="log out icon" />
+                        </div>
+                        <!-- account options ends -->
+                    </div>
+                </div>
+            </nav>
+            <!-- navbar ends -->
+
+            <!-- insurance event section starts -->
+            <div class="insurance-event">
+                
+            </div>
+            <!-- insurance event section ends -->
+        </section>
+        <!-- main content ends -->
+    </main>
+
+    <!-- necessary javascript links -->
+    <script src="../js/index.js"></script>
+</body>
+</html>
