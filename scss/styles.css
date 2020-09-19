@@ -98,10 +98,20 @@ main aside.sidebar {
 /* sidebar styles end */
 /* main content styles start */
 section.main-content {
-  width: calc(100% - 205px); }
+  width: calc(100% - 205px);
+  /* navbar styles start */
+  /* navbar styles end */
+  /* statistics section styles start */
+  /* statistics section styles end */ }
   section.main-content nav {
     height: 80px;
-    background-color: #fff; }
+    background-color: #fff;
+    /* search box styles start */
+    /* search box styles end */
+    /* new appeal button and dropdown styles start */
+    /* new appeal button and dropdown styles end */
+    /* account information styles start */
+    /* account information styles end */ }
     section.main-content nav .search-box input {
       border: none; }
       section.main-content nav .search-box input::placeholder {
@@ -129,6 +139,20 @@ section.main-content {
         width: 100%;
         height: 100%;
         border-radius: 50%; }
+  section.main-content div.statistics {
+    height: 250px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 40px 60px !important; }
+    section.main-content div.statistics h1 {
+      font-size: 34px;
+      font-weight: 600; }
+    section.main-content div.statistics p {
+      font-size: 18px; }
+    section.main-content div.statistics h6 {
+      font-size: 14px; }
+    section.main-content div.statistics strong {
+      font-size: 24px; }
 
 /* main content styles end */
 

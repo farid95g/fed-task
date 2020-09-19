@@ -110,9 +110,11 @@ main aside.sidebar {
 /* main content styles start */
 section.main-content {
     width: calc(100% - 205px);
+    /* navbar styles start */
     nav {
         height: $header-height;
         background-color: $white;
+        /* search box styles start */
         .search-box {
             input {
                 border: none;
@@ -122,6 +124,8 @@ section.main-content {
                 }
             }
         }
+        /* search box styles end */
+        /* new appeal button and dropdown styles start */
         .new-appeal {
             button {
                 background-color: $yellow;
@@ -142,6 +146,8 @@ section.main-content {
                 }
             }
         }
+        /* new appeal button and dropdown styles end */
+        /* account information styles start */
         .account-info {
             > div {
                 width: 36px;
@@ -154,6 +160,29 @@ section.main-content {
                 }
             }
         }
+        /* account information styles end */
     }
+    /* navbar styles end */
+    /* statistics section styles start */
+    div.statistics {
+        height: 250px;
+        background-color: $white;
+        border-radius: 5px;
+        padding: 40px 60px !important;
+        h1 {
+            font-size: $larger-font;
+            font-weight: 600;
+        }
+        p {
+            font-size: 18px;
+        }
+        h6 {
+            font-size: $smaller-font;
+        }
+        strong {
+            font-size: $medium-font;
+        }
+    }
+    /* statistics section styles end */
 }
 /* main content styles end */
