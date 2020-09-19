@@ -1,14 +1,80 @@
+/* imports */
 /* style resets start */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none !important; }
+  a:hover {
+    color: inherit; }
 
 /* style resets end */
+/* common styles start */
+.white {
+  color: #fff; }
+
+.orange {
+  color: #FF8300; }
+
+.blue {
+  color: #008DDD; }
+  .blue:hover {
+    color: #008DDD; }
+
+.gray {
+  color: #C0C5C7; }
+  .gray:hover {
+    color: #C0C5C7; }
+
+.active-link {
+  background-color: rgba(196, 196, 196, 0.2); }
+  .active-link::before {
+    content: "";
+    width: 3px;
+    height: 100%;
+    background-color: #FF8300;
+    position: absolute;
+    left: 0; }
+
+.active-toggler {
+  background-color: rgba(196, 196, 196, 0.2); }
+
+/* common styles end */
 /* sidebar styles start */
+main aside.sidebar {
+  width: 205px;
+  height: 100vh;
+  background-color: #323E48;
+  position: fixed;
+  /* sidebar logo styles start */
+  /* sidebar logo styles end */
+  /* sidebar navigation links styles start */
+  /* sidebar navigation links styles end */
+  /* sidebar footer styles start */
+  /* sidebar footer styles end */ }
+  main aside.sidebar div.logo {
+    height: 80px; }
+  main aside.sidebar nav.aside-menu ul li a:hover {
+    color: #fff; }
+  main aside.sidebar footer {
+    bottom: 0; }
+    main aside.sidebar footer .theme-toggler {
+      background-color: #1B2630;
+      width: 128px;
+      border-radius: 70px;
+      height: 40px;
+      padding: 0 4px !important; }
+      main aside.sidebar footer .theme-toggler a {
+        border-radius: 90px;
+        width: 60px;
+        height: 32px; }
+    main aside.sidebar footer p {
+      font-size: 14px; }
+
 /* sidebar styles end */
+/* main content styles start */
+/* main content styles end */
 
 /*# sourceMappingURL=styles.css.map */

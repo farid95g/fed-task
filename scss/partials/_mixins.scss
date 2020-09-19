@@ -1,0 +1,6 @@
+@mixin customLink($color) {
+    color: $color;
+    &:hover {
+        color: $color;
+    }
+}
