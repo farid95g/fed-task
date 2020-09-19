@@ -1,6 +1,7 @@
 /* imports */
 @import "partials/variables";
 @import "partials/mixins";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /* style resets start */
 * {
@@ -8,11 +9,12 @@
     padding: 0 !important;
     box-sizing: border-box !important;
 }
+body {
+    background-color: #f5f7f9;
+    font-family: 'Roboto', sans-serif;
+}
 a {
     text-decoration: none !important;
-    &:hover {
-        color: inherit;
-    }
 }
 /* style resets end */
 
@@ -22,6 +24,9 @@ a {
 }
 .orange {
     color: $orange;
+}
+.dark {
+    @include customLink($dark-color);
 }
 .blue {
     @include customLink($blue);
@@ -42,6 +47,16 @@ a {
 }
 .active-toggler {
     background-color: $active;
+}
+.shadowed {
+    @include setShadow(36, 64, 73, 0.05);
+}
+.shadowed-dropdown {
+    @include setShadow(36, 64, 73, 0.13);
+}
+.hidden {
+    opacity: 0;
+    transition: opacity .5s;
 }
 /* common styles end */
 
@@ -93,4 +108,52 @@ main aside.sidebar {
 /* sidebar styles end */
 
 /* main content styles start */
+section.main-content {
+    width: calc(100% - 205px);
+    nav {
+        height: $header-height;
+        background-color: $white;
+        .search-box {
+            input {
+                border: none;
+                &::placeholder {
+                    font-size: $smaller-font;
+                    color: #C0C5C7;
+                }
+            }
+        }
+        .new-appeal {
+            button {
+                background-color: $yellow;
+                border-radius: 3px;
+                font-size: $smaller-font;
+                border: none;
+                width: 146px;
+                &:focus {
+                    outline: 0 !important;
+                }
+            }
+            .appeal-dropdown {
+                background-color: $white;
+                transition: opacity .5s;
+                border-radius: 5px;
+                a {
+                    font-size: $smaller-font;
+                }
+            }
+        }
+        .account-info {
+            > div {
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
 /* main content styles end */

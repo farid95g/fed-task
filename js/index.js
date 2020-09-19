@@ -14,3 +14,7 @@ document.querySelectorAll("aside footer .theme-toggler a").forEach(toggler => {
         console.log(e.target);
     })
 })
+
+document.getElementById("show-appeal-dropdown").addEventListener("click", () => {
+    document.querySelector(".appeal-dropdown").classList.toggle("hidden");
+})
