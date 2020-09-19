@@ -1,0 +1,52 @@
+section.main-content {
+    /* navbar styles start */
+    nav {
+        height: $header-height;
+        background-color: $white;
+        /* search box styles start */
+        .search-box {
+            input {
+                border: none;
+                &::placeholder {
+                    font-size: $smaller-font;
+                    color: #C0C5C7;
+                }
+            }
+        }
+        /* search box styles end */
+        /* new appeal button and dropdown styles start */
+        .new-appeal {
+            button {
+                background-color: $yellow;
+                border-radius: 3px;
+                font-size: $smaller-font;
+                border: none;
+                width: 146px;
+            }
+            .appeal-dropdown {
+                background-color: $white;
+                transition: opacity .5s;
+                border-radius: 5px;
+                a {
+                    font-size: $smaller-font;
+                }
+            }
+        }
+        /* new appeal button and dropdown styles end */
+        /* account information styles start */
+        .account-info {
+            > div {
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                }
+            }
+        }
+        /* account information styles end */
+    }
+    /* navbar styles end */
+}

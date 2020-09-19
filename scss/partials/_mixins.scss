@@ -10,3 +10,7 @@
     -moz-box-shadow: 0px 4px 30px 0px rgba($x, $y, $blur, $opacity);
     box-shadow: 0px 4px 30px 0px rgba($x, $y, $blur, $opacity);
 }
+
+@mixin setGap($size) {
+    gap: $size;
+}
