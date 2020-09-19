@@ -26,7 +26,7 @@ a {
     color: $orange;
 }
 .dark {
-    @include customLink($dark-color);
+    @include customLink($dark);
 }
 .blue {
     @include customLink($blue);
@@ -64,7 +64,7 @@ a {
 main aside.sidebar {
     width: 205px;
     height: 100vh;
-    background-color: $dark-color;
+    background-color: $dark;
     position: fixed;
     /* sidebar logo styles start */
     div.logo {
@@ -171,7 +171,7 @@ section.main-content {
         padding: 40px 60px !important;
         h1 {
             font-size: $larger-font;
-            font-weight: 600;
+            font-weight: $bold;
         }
         p {
             font-size: 18px;
@@ -184,5 +184,51 @@ section.main-content {
         }
     }
     /* statistics section styles end */
+
+    /* agreements section styles start */
+    div.agreements {
+        h1 {
+            font-size: 28px;
+            font-weight: $bold;
+        }
+        .agreements-table {
+            table {
+                background-color: $white;
+                border-collapse: separate;
+                border-radius: 5px;
+                tr {
+                    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+                }
+                th {
+                    font-size: $smaller-font;
+                    &.status-header {
+                        width: 150px;
+                    }
+                }
+                td {
+                    color: $dark;
+                    font-size: $smaller-font;
+                }
+                .status {
+                    width: 90%;
+                    height: 34px;
+                    border-radius: 3px;
+                }
+                .valid {
+                    background-color: rgba(41, 199, 123, .3);
+                    color: #34D186;
+                }
+                .expired {
+                    background-color: rgba(255, 131, 0, .3);
+                    color: $orange;
+                }
+                .invalid {
+                    background-color: rgba(225, 37, 27, .3);
+                    color: #E1251B;
+                }
+            }
+        }
+    }
+    /* agreements section styles end */
 }
 /* main content styles end */
