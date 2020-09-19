@@ -22,7 +22,7 @@ document.querySelectorAll("aside footer .theme-toggler a").forEach(toggler => {
             changeBackground(document.querySelectorAll(".dark-bg"), "dark-bg", "white-bg");
             changeImage(document.querySelectorAll(".log-out"), "assets/icons/log-out.svg");
             if (document.querySelectorAll("td img[src*=svg]") !== null) {
-                changeImage(document.querySelectorAll("td img[src*=svg]"), "assets/icons/ellipsis.svg");
+                changeImage(document.querySelectorAll("td img[src*=svg]"), "assets/icons/ellipsis-white.svg");
             }
         }
     })
@@ -30,7 +30,11 @@ document.querySelectorAll("aside footer .theme-toggler a").forEach(toggler => {
 
 const changeImage = (arr, src) => {
     arr.forEach(image => {
-        image.src = src;
+        if (window.location.href.toString().split('/').indexOf("index.html") !== -1) {
+            image.src = src;
+        } else {
+            image.src = "../" + src;
+        }        
     })
 }
 const changeBackground = (arr, oldColor, newColor) => {
